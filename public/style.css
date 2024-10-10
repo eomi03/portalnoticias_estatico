@@ -11,10 +11,11 @@ header {
 }
 
 .center {
-    max-width: 1100px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
+    flex-wrap: nowrap;
 }
 
 .logo {
@@ -90,11 +91,21 @@ section.noticia-destaque > .center {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 10px;
+    padding: 40px;
     max-width: 600px;
     color: white;
     z-index: 2;
     margin-top: 20px; /* Para adicionar espaçamento */
+}
+
+.title-destaque-descricao h2{
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.title-destaque-descricao p{
+    font-weight: lighter;
+    font-size: 16px;
 }
 
 .overlay-destaque {
@@ -106,4 +117,150 @@ section.noticia-destaque > .center {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
+}
+
+section.outras-noticias {
+    background-color: #eaeaea;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+section.outras-noticias h2 {
+    font-size: 50px;
+}
+
+.ultimas {
+    width: 80%;
+    padding: 0 10px;
+    display: flex;
+}
+
+.mais-lidas {
+    width: 40%;
+    float: right;
+    height: 100%;
+    background-color: white;
+    
+}
+
+.mais-lidas > h3{
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 10px 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box-ultima-single {
+    margin: 20px;
+    text-align: left;
+    width: 48%;
+    margin-right: 2%;
+    background-color: black;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.box-ultima-single h3{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+}
+
+.box-ultima-single img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.conteudo-noticia-single {
+    padding: 20px;
+}
+
+.box-ultima-single p{
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.box-ultima-single a{
+    display: block;
+    width: 181px;
+    height: 76px;
+    border: 1px solid #ebebeb;
+    text-decoration: none;
+    color: aqua;
+    border-radius: 10px;
+    line-height: 76px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.mais-lida-noticia-single{
+    text-align: left;
+    padding: 20px;
+    display: flex;
+}
+
+.mais-lida-noticia-single img{
+    width: 30%;
+}
+
+.mais-lida-noticia-single .texto-mais-lida-single{
+    width: 70%;
+    padding: 8px 20px;
+}
+
+.texto-mais-lida-single h4{
+    color: black;
+    letter-spacing: 3.2px;
+}
+
+.texto-mais-lida-single p{
+    color: #7b8591; ;
+    font-size: 14px;
+}
+
+.imagem-quadrada {
+    width: 200px; /* Ajuste para o tamanho desejado */
+    height: 200px; /* A mesma altura para manter o formato quadrado */
+    overflow: hidden; /* Esconde o excesso da imagem */
+    border-radius: 10px; /* Opcional: adiciona bordas arredondadas */
+    position: relative; /* Para posicionar a imagem corretamente */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.imagem-quadrada img {
+    width: 100%; /* A imagem ocupará toda a largura do contêiner */
+    height: 100%; /* A imagem ocupará toda a altura do contêiner */
+    object-fit: cover; /* A imagem será recortada para preencher o quadrado */
+}
+
+.texto-mais-lida-single a{
+    margin-top: 10px;
+    display: block;
+    width: 121px;
+    height: 36px;
+    border: 1px solid #ebebeb;
+    text-decoration: none;
+    color: aqua;
+    border-radius: 10px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer{
+    background-color: #0aacdc;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }

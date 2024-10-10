@@ -1,36 +1,82 @@
-<html>
-    <head>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href="/public/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <div class="center">
-                <div class="logo">
-                    <h2><span style="font-weight: lighter;">Danki</span><b>News</b></h2>
-                </div><!--logo-->
-                <div class="form-busca">
-                    <form>
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                        <input name="busca" type="text" placeholder="Busca..." />
-                    </form>
-                </div><!--formbusca-->
-            </div><!--center-->
-        </header>
+
+    <%- include('partials/header.html') %>
 
         <section class="noticia-destaque">
             <div class="center">
                 <div class="img-destaque">
                     <div class="overlay-destaque"></div>
                     <div class="title-destaque-descricao">
-                        <h2>Quer Fugir das Praias de Verão?</h2>
-                        <p>Paisagens naturais e maravilhosas.</p>
+                        <h2>Buscando os melhores jogos?</h2>
+                        <p>Confira a lista dos mais jogados e vendidos atualmente nas principais plataformas de jogos.</p>
                     </div>
-                    <img src="/public/images/landscape.jpg" />
+                    <img src="/public/images/JOGOS.webp" />
                 </div>
             </div>
         </section>
+
+        <section class="outras-noticias">
+            <div class="title-outras-noticias">
+                <h2>Últimas Notícias</h2>
+                <br><br>
+                <div class="center">
+                    <div class="ultimas">
+                        <div class="box-ultima-single">
+                            <h3>Promoção na Epic:</h3>
+                            <img src="/public/images/tomb_raider_remastered.jpg" />
+                            <div class="conteudo-noticia-single" >
+                            <p>A trilogia remasterizada de Tomb Raider ganha oferta exclusiva. Descubra as aventuras originais de Lara Croft, fielmente restauradas.</p>
+                            <a href="=/ofertas">Saiba mais</a>
+                        </div>
+                        </div>
+                        <div class="box-ultima-single">
+                            <h3>Promoção na Epic:</h3>
+                            <img src="/public/images/blasphemous.jpg" />
+                            <div class="conteudo-noticia-single" >
+                            <p>Blasphemous é um brutal jogo de ação em plataforma com combate hack and slash desafiador que se passa no mundo sinistro de Cvstodia.</p>
+                            <a href="=/ofertas">Saiba mais</a>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mais-lidas">
+                        <h3>Mais Lidas</h3>
+                        <div class="mais-lidas-noticia-single">
+                            <div class="imagem-quadrada"> <!-- Adicionada div para imagem quadrada -->
+                                <img src="/public/images/bmw.png" />
+                            </div>
+                            <div class="texto-mais-lidas-single">
+                                <h4>Black Myth: Wukong</h4>
+                                <p>Black Myth: Wukong é sucesso estrondoso: após forte lançamento, game alcança marca de 20 milhões de cópias vendidas em um mês. O pico do game foi de 3 milhões de jogadores simultâneos somando todas as plataformas</p>
+                                <a href="=/ofertas">Saiba mais</a>
+                            </div>
+                        </div>
+                        <div class="mais-lidas-noticia-single">
+                            <div class="imagem-quadrada"> <!-- Adicionada div para imagem quadrada -->
+                                <img src="/public/images/fort.png" />
+                            </div>
+                            <div class="texto-mais-lidas-single">
+                                <h4>Fortnite</h4>
+                                <p>Com o poder antigo da Caixa de Pandora, o tirano e agora blindado Doutor Destino, da Marvel, expandiu os domínios de Latvéria até a Ilha do Battle Royale e se estabeleceu com a ajuda de seu exército de capangas. Quando a armadura do Destino estiver pronta, seu poder será absoluto.</p>
+                                <a href="=/ofertas">Saiba mais</a>
+                            </div>
+                        </div>
+                        <div class="mais-lidas-noticia-single">
+                            <div class="imagem-quadrada"> <!-- Adicionada div para imagem quadrada -->
+                                <img src="/public/images/steam.png" />
+                            </div>
+                            <div class="texto-mais-lidas-single">
+                                <h4>Steam</h4>
+                                <p>Dragon Ball Sparking Zero já é o maior jogo de anime da história na plataforma da Valve.</p>
+                                <a href="=/ofertas">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--center-->
+            </div><!--title-outras-noticias-->
+        </section>
+
+        <%- include('partials/footer.html') %>
+
+        
     </body>
 </html>
