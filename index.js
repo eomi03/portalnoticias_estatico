@@ -16,15 +16,16 @@ app.set('views', path.join(__dirname, '/pages'));
 
 app.get('/', (req, res) => {
     if (req.query.busca == null) {
-        res.render('home', {});
+        res.render('home', {}); // Renderizar a página home.ejs
     } else {
-        res.send('Você buscou: ' + req.query.busca);
+        res.render('home', {});  // Renderizar com o EJS ao invés de send
     }
 });
 
 app.get('/:slug', (req, res) => {
-    res.send(req.params.slug);
+    res.render('single', {}); // Renderizar a página single.ejs ao invés de usar send
 });
+
 
 app.listen(5000, () => {
     console.log('server rodando!');
