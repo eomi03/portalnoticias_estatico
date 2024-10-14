@@ -15,7 +15,7 @@ header {
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
-    justify-content: space-between; /* Corrige o espaçamento */
+    justify-content: space-between;
 }
 
 .logo {
@@ -24,6 +24,11 @@ header {
 
 .logo h2 {
     color: white;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
 }
 
 .form-busca {
@@ -126,7 +131,7 @@ section.outras-noticias h2 {
     display: flex;
 }
 
-/* Noticia Single - mantendo os nomes */
+/* Noticia Single */
 .noticia {
     padding: 20px 0;
     background-color: #eaeaea;
@@ -136,7 +141,7 @@ section.outras-noticias h2 {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    width: 65%; /* Ajustando para não ocupar todo o espaço */
+    width: 65%;
     margin-right: 2%;
     float: left;
 }
@@ -158,7 +163,7 @@ section.outras-noticias h2 {
 .noticia-single p {
     color: #7b8591;
     font-size: 15px;
-    line-height: 22px; /* Melhorando a legibilidade */
+    line-height: 22px;
     margin: 10px 0;
 }
 
@@ -183,9 +188,9 @@ section.outras-noticias h2 {
     text-align: left;
     width: 48%;
     background-color: black;
-    padding: 15px; /* Padding uniformizado */
+    padding: 15px;
     border-radius: 10px;
-    float: left; /* Para que fiquem lado a lado */
+    float: left;
 }
 
 .box-ultima-single h3 {
@@ -224,11 +229,11 @@ section.outras-noticias h2 {
 
 /* Mais Lidas */
 .mais-lidas {
-    width: 80%;
+    width: 100%;
     background-color: white;
     padding: 20px;
-    float: right; /* Corrige a posição */
-    margin-top: 20px; /* Afasta da notícia principal */
+    float: right;
+    margin-top: 20px;
 }
 
 .mais-lidas h3 {
@@ -242,7 +247,7 @@ section.outras-noticias h2 {
 
 .mais-lidas-noticia-single {
     display: flex;
-    align-items: flex-start; /* Alinha as imagens e textos no topo */
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
@@ -284,4 +289,95 @@ footer {
     text-align: center;
     color: white;
     padding: 20px;
+}
+
+/* Responsividade */
+
+/* Tablets (tela entre 600px e 1024px) */
+@media (max-width: 1024px) {
+    .center {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-busca {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .noticia-single {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .ultimas {
+        flex-direction: column;
+    }
+
+    .box-ultima-single {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .title-destaque-descricao h2 {
+        font-size: 36px;
+    }
+
+    .mais-lidas-noticia-single img {
+        width: 60px;
+    }
+
+    .mais-lidas-noticia-single p {
+        font-size: 12px;
+    }
+}
+
+/* Dispositivos móveis (tela até 600px) */
+@media (max-width: 600px) {
+    .form-busca input {
+        font-size: 16px;
+    }
+
+    .img-destaque img {
+        height: auto;
+    }
+
+    .title-destaque-descricao {
+        padding: 20px;
+    }
+
+    .title-destaque-descricao h2 {
+        font-size: 24px;
+    }
+
+    .mais-lidas {
+        width: 100%;
+    }
+
+    .mais-lidas-noticia-single {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mais-lidas-noticia-single img {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .mais-lidas-noticia-single p {
+        font-size: 14px;
+    }
+
+    .noticia-single {
+        width: 100%;
+    }
+
+    ol li {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
 }
